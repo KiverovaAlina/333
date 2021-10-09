@@ -1,0 +1,48 @@
+#my-drop-down-menu ul, ul#my-drop-down-menu{
+	list-style:none;/*штука, чтобы не было точек в списках*/
+}
+ 
+#my-drop-down-menu{ /*выравнивание по центру*/
+	position:relative;
+	z-index:4;
+	width:400px;
+	height:20px;
+	margin:0 auto;
+}
+ 
+#my-drop-down-menu li.list{/*расположение меню в одну линию*/
+	float:left; 
+	display:block;
+	margin:0 5px;
+}
+ 
+#my-drop-down-menu a{/*цвет*/
+	color: #6ea3a7;
+	text-decoration:none;
+}
+ 
+#my-drop-down-menu ul.child{ /*дроп меню*/
+	background: #2b2d3a;
+	padding:5px;/*расстояние между пунктами в меню*/
+	position:absolute;
+	top:29x; 
+	left:-9999px; 
+	z-index:3;
+	border-top: 1px solid #2b2d3a;
+	-moz-box-shadow: 0px 3px 7px #251d1b;/*тень, разделение*/
+	-webkit-box-shadow: 0px 3px 7px #251d1b;
+	box-shadow: 0px 3px 7px #251d1b;
+}
+ 
+#my-drop-down-menu li:hover ul.child{/*пункты в *меню*/
+	left:auto;
+}
+ 
+#my-drop-down-menu li a.link{/*расположение меню*/
+	display:block;
+	padding:5px;
+}
+ 
+#my-drop-down-menu li:hover a.link{
+	background: #2b2d3a;
+}
